@@ -1,0 +1,12 @@
+[package]
+name = "turn-based"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bevy = "0.13.0"
+bevy_editor_pls = "0.8"
+
+# Enable max optimizations for deps, but not my code:
+[profile.dev.package."*"]
+opt-level = 3
